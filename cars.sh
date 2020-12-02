@@ -14,9 +14,10 @@ do
 			echo "Enter the year: "; read YEAR
 			echo "Enter the make: "; read MAKE
 			echo "Enter the model: "; read MODEL
-			
+		
+			new_car=""	
 			new_car="${YEAR}:${MAKE}:${MODEL}"
-			new_car >> My_old_cars.txt;;
+			echo "$new_car" >> My_old_cars.txt;;
 		"2")
 			sort My_old_cars.txt > My_old_cars_sorted.txt
 			echo "Your list of cars:"
